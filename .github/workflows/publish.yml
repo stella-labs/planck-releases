@@ -21,6 +21,13 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
+      - name: Check git tag doesn't already exist
+        run: |
+          if git tag -l | grep -q ${{ inputs.tag }}; then
+            echo "Git tag ${{ inputs.tag }} already exists"
+            exit 1
+          fi
+
       - name: Download latest.json
         run: |
           gh release download ${{ inputs.tag }} --pattern "latest.json" --clobber
@@ -43,14 +50,11 @@ jobs:
           git add latest.json
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git commit -m "Bumped version to ${{ steps.version.outputs.version }}"
-          git tag ${{ steps.version.outputs.version }}
+          git commit -m "Bumped version to ${{ inputs.tag }}"
+          git tag ${{ inputs.tag }}
           git push
 
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.version.outputs.version }}
-          make_latest: ${{ !inputs.prerelease }}
-          prerelease: ${{ inputs.prerelease }}
-          draft: false
+      - name: Mark release as not draft
+        run: gh release edit ${{ inputs.tag }} --draft=false
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
