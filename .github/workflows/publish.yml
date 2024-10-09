@@ -21,13 +21,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
 
-      - uses: robinraju/release-downloader@v1
-        with:
-          tag: ${{ inputs.tag }}
-          fileName: 'latest.json'
-          tarBall: false
-          zipBall: false
-          out-file-path: "downloaded-release"
+      - name: Download latest.json
+        run: |
+          gh release download ${{ inputs.tag }} --pattern "latest.json" --clobber
 
       - name: Get version
         id: version
@@ -42,7 +38,6 @@ jobs:
 
       - name: Update latest.json
         run: |
-          mv downloaded-release/latest.json latest.json
           git add latest.json
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
