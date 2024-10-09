@@ -7,10 +7,6 @@ on:
           type: string
           required: true
           description: "The tag to release"
-        prerelease:
-          type: boolean
-          required: true
-          description: "Whether the release is a prerelease"
 
 jobs:
   build:
