@@ -24,6 +24,8 @@ jobs:
       - name: Download latest.json
         run: |
           gh release download ${{ inputs.tag }} --pattern "latest.json" --clobber
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get version
         id: version
