@@ -1,0 +1,59 @@
+name: Publish Release
+
+on:
+    workflow_dispatch:
+      inputs:
+        tag:
+          type: string
+          required: true
+          description: "The tag to release"
+        prerelease:
+          type: boolean
+          required: true
+          description: "Whether the release is a prerelease"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - uses: robinraju/release-downloader@v1
+        with:
+          tag: ${{ inputs.tag }}
+          fileName: 'latest.json'
+          tarBall: false
+          zipBall: false
+          out-file-path: "downloaded-release"
+
+      - name: Get version
+        id: version
+        run: echo "version=$(jq -r '.version' latest.json)" >> $GITHUB_OUTPUT
+
+      - name: Check same version
+        run: |
+          if [ "${{ inputs.tag }}" != "${{ steps.version.outputs.version }}" ]; then
+            echo "Tag from input and version from latest.json are different"
+            exit 1
+          fi
+
+      - name: Update latest.json
+        run: |
+          mv downloaded-release/latest.json latest.json
+          git add latest.json
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Bumped version to ${{ steps.version.outputs.version }}"
+          git tag ${{ steps.version.outputs.version }}
+          git push
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          make_latest: ${{ !inputs.prerelease }}
+          prerelease: ${{ inputs.prerelease }}
+          draft: false
