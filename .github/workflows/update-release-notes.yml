@@ -1,0 +1,36 @@
+name: Update Release Notes
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: true
+        description: "Semver of release to update, eg. 1.2.3"
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: true
+        description: "Semver of release to update, eg. 1.2.3"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Release Data
+        run: |
+          gh release view ${{ inputs.tag }} --repo stella-labs/planck-releases --json body --jq .body > release_description.txt
+          gh release download ${{ inputs.tag }} --repo stella-labs/planck-releases --pattern "latest.json" -O latest.json
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update Release Notes
+        run: |
+          RELEASE_NOTES=$(cat release_description.txt)
+          jq --arg notes "$RELEASE_NOTES" '.notes = $notes' latest.json > updated_latest.json
+          mv updated_latest.json latest.json
+      - name: Upload Release
+        run: |
+          gh release upload ${{ inputs.tag }} --repo stella-labs/planck-releases latest.json --clobber
+        env:
+          GH_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
