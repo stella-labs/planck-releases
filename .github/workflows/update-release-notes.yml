@@ -33,4 +33,4 @@ jobs:
         run: |
           gh release upload ${{ inputs.tag }} --repo stella-labs/planck-releases latest.json --clobber
         env:
-          GH_TOKEN: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
