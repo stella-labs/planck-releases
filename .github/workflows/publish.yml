@@ -1,16 +1,23 @@
 name: Publish Release
 
 on:
-    workflow_dispatch:
-      inputs:
-        tag:
-          type: string
-          required: true
-          description: "The tag to release"
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: true
+        description: "The tag to make public"
 
 jobs:
-  build:
+  update-release-notes:
+    uses: ./.github/workflows/update-release-notes.yml
+    secrets: inherit
+    with:
+      tag: ${{ inputs.tag }}
+
+  publish:
     runs-on: ubuntu-latest
+    needs: update-release-notes
     permissions:
       contents: write
     steps:
