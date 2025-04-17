@@ -1,31 +1,31 @@
 {
-  "version": "1.0.0",
-  "notes": "New Features:\r\n\r\n- Planck Max: Maximize your productivity with 10,000 synced clipboard items, image search via OCR, text extraction from images using OCR, and early access to other premium features!\r\n\r\n- New Onboarding: We've designed a brand-new onboarding flow to help you get started with Planck.\r\n\r\n- New Home Page and Item Detail View: A completely redesigned home page to manage all your clipboard items. Open any item to view it in detail.\r\n\r\n- Improved File Copying: View each individual file when copying multiple files at once.\r\n\r\n- Item Labels: Easily distinguish between copied files, text, and images.\r\n\r\nOther Improvements:\r\n\r\n- More reliable and consistent syncing.\r\n\r\n- Various bug fixes\r",
-  "pub_date": "2025-04-14T06:11:23.288Z",
+  "version": "1.0.2",
+  "notes": "- macOS: No more login prompts after first launch\r\n- minor bug fixes and UI improvements\r",
+  "pub_date": "2025-04-17T04:39:10.397Z",
   "platforms": {
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY1N4QkZsdUp5Z0dIcGg3UnZ1MHZmejUxNXJybEFxOU9vbmpQbUdDb0pYRytoQWU5WGwybFNOMWlPclJhOXIxWk1HVWNJbWI3T0QxZVRFdHgweFFVQ3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0NjA5MTk2CWZpbGU6UGxhbmNrXzEuMC4wX2FtZDY0LkFwcEltYWdlCmZyQVdKSGpWbVZZdkFDZnpoQmJldHN3RTRubmFDSUJ2R3JkRTJXcFdubXAxWlh5WHluOURBcDZaOCtFaDlFalRxSThtRmE2andxdThnL3RQdUVkM0RRPT0K",
-      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.0/Planck_1.0.0_amd64.AppImage"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY2FHVytCS0ozUjk0ZkN3T0x0VDBIdHFvL01DQ3duREI2S0h1MGVpRUJ3TmlodmdHUEVzeDRZODh2VkNEbXNhM0c2R2dqWW1HNFVVT1pNSXJtN0IrSlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0ODYzMTM5CWZpbGU6UGxhbmNrXzEuMC4yX2FtZDY0LkFwcEltYWdlCkd3VVc1Wm1sVmlWakgwNUJndUlJbk1ESS81MmRsUnlsWVk4NmVhTGNwNklHaUlmNWZjMXltRnhDUGhBQU90NUZVemVZMGxNWEY0WnFMZ0l6OWdIUkJRPT0K",
+      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.2/Planck_1.0.2_amd64.AppImage"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY1NjZHp1RHA3VDBpSVVnZTBOblBhbFkyNitEN25JY2ZDay94aEMrOGRsRHU1RnE0Q3B3QXhJWWMrd1ZyWWpVSHF4Z2ovc0x5WHpSLzRzUVBpc2xNaEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0NjA5MzE1CWZpbGU6UGxhbmNrXzEuMC4wX3g2NF9lbi1VUy5tc2kKV0JPVk5SWTVCdmJ2a0lmbFZuT1N6TnpKSld5b2xjVDdDTXF6MWRQbGt6djVoTE5mc290ZTEyMXFzc2pHRjd6Vks0S3A4d0k3eFRLek1jbVRXR09RQ2c9PQo=",
-      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.0/Planck_1.0.0_x64_en-US.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY2FnU3pSa1AvcVBWSE96WVZEbk9GMVRyY3J1d2pNQ09ISWloZkhkeFA4NkE4RDBxWG9oVjRQd3VrUTBMVU1lc0JKc2N4MFVEUWdTU3RkckZPODBxNGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0ODYzMjgzCWZpbGU6UGxhbmNrXzEuMC4yX3g2NF9lbi1VUy5tc2kKRXNETnNoMjdqWjl4cVYyYk5jeXRMZGdvM2szMWlGaUt1anp3cG03UWZERkNKSlRvZmtuZTF2ZEJEcCt3UzIxcjNlVk5kUnBteEVTWDNBeXVWQW9EQXc9PQo=",
+      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.2/Planck_1.0.2_x64_en-US.msi"
     },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY2Z3OGFoR3lzQUx0WUhYSW1VTkozOVU3VVZyK0U2T2dncVg1Q1pKQW5xbnJNWk1ubFBKYlpLNW1mV3ltcUt2MFhreDBabkFmWGRlMGVtR0FhdEU4dkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0NjExMDY3CWZpbGU6UGxhbmNrLmFwcC50YXIuZ3oKUnJuOU53TFFjWmJwZVRtR3FXM0N4QmE5ZWN3Y3BzNmRNbnpCMEFZQXFPcnhFMEo4VzI4TzJOTm03ZGFxZzBQN3pSTmU1bkpkU2F1UkFUR2tmVmNxQ1E9PQo=",
-      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.0/Planck_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY1dOcm5xQ044alpCTkVZRnQzcXNaZlR1RDUwUWs0UThZT0NxTm1EaE9zU3Y2amIreW9mY1QwcTdDdys2b3RVZ0V3SERNLzIxUVFDSzlZbUc1bVQrTXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0ODYzMzExCWZpbGU6UGxhbmNrLmFwcC50YXIuZ3oKWURRbUtUeElwUHNNYWNpV3B5N2FLMENxK0M1eXdtQktaV3BFZFNrbXpiWjFwVVZOd1VkeFFQcVJKemZnbkFRZHpuWUFKKzdIUGlJeXNNakxiTFBRQ2c9PQo=",
+      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.2/Planck_universal.app.tar.gz"
     },
     "darwin-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY2Z3OGFoR3lzQUx0WUhYSW1VTkozOVU3VVZyK0U2T2dncVg1Q1pKQW5xbnJNWk1ubFBKYlpLNW1mV3ltcUt2MFhreDBabkFmWGRlMGVtR0FhdEU4dkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0NjExMDY3CWZpbGU6UGxhbmNrLmFwcC50YXIuZ3oKUnJuOU53TFFjWmJwZVRtR3FXM0N4QmE5ZWN3Y3BzNmRNbnpCMEFZQXFPcnhFMEo4VzI4TzJOTm03ZGFxZzBQN3pSTmU1bkpkU2F1UkFUR2tmVmNxQ1E9PQo=",
-      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.0/Planck_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY1dOcm5xQ044alpCTkVZRnQzcXNaZlR1RDUwUWs0UThZT0NxTm1EaE9zU3Y2amIreW9mY1QwcTdDdys2b3RVZ0V3SERNLzIxUVFDSzlZbUc1bVQrTXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0ODYzMzExCWZpbGU6UGxhbmNrLmFwcC50YXIuZ3oKWURRbUtUeElwUHNNYWNpV3B5N2FLMENxK0M1eXdtQktaV3BFZFNrbXpiWjFwVVZOd1VkeFFQcVJKemZnbkFRZHpuWUFKKzdIUGlJeXNNakxiTFBRQ2c9PQo=",
+      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.2/Planck_universal.app.tar.gz"
     },
     "darwin-universal": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY2Z3OGFoR3lzQUx0WUhYSW1VTkozOVU3VVZyK0U2T2dncVg1Q1pKQW5xbnJNWk1ubFBKYlpLNW1mV3ltcUt2MFhreDBabkFmWGRlMGVtR0FhdEU4dkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0NjExMDY3CWZpbGU6UGxhbmNrLmFwcC50YXIuZ3oKUnJuOU53TFFjWmJwZVRtR3FXM0N4QmE5ZWN3Y3BzNmRNbnpCMEFZQXFPcnhFMEo4VzI4TzJOTm03ZGFxZzBQN3pSTmU1bkpkU2F1UkFUR2tmVmNxQ1E9PQo=",
-      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.0/Planck_universal.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY1dOcm5xQ044alpCTkVZRnQzcXNaZlR1RDUwUWs0UThZT0NxTm1EaE9zU3Y2amIreW9mY1QwcTdDdys2b3RVZ0V3SERNLzIxUVFDSzlZbUc1bVQrTXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0ODYzMzExCWZpbGU6UGxhbmNrLmFwcC50YXIuZ3oKWURRbUtUeElwUHNNYWNpV3B5N2FLMENxK0M1eXdtQktaV3BFZFNrbXpiWjFwVVZOd1VkeFFQcVJKemZnbkFRZHpuWUFKKzdIUGlJeXNNakxiTFBRQ2c9PQo=",
+      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.2/Planck_universal.app.tar.gz"
     },
     "windows-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY2JZVVNwTlJSc05Rd0ZMdGxzY0tSc21PVUdZOW9nWC9zeWR5d2ZvaDZrOGlSc21zSzkvS21yOHJBaEg3UGEzN3VyTjkrNHB3MUtFTEdoUlpwL1IxN0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0NjEwMjM1CWZpbGU6UGxhbmNrXzEuMC4wX2FybTY0X2VuLVVTLm1zaQo1N3ZtblhNbDBVd3hBcVZlaWN2VG5uVnovTno5WjJjeTllWlRPTFNYd2JYMzlwazBuSEpsbXJVYSsxZ3lqWEh4T290emJ5c1A0NFBTRDRwTEJmZWtCUT09Cg==",
-      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.0/Planck_1.0.0_arm64_en-US.msi"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRNUxjM2U5VllKY1JRZS9weEgvQ0liY1M3NVdMekQrN3RqTTdxK2pPSUpRRWlmaUR2WWpFSHc0aDJlQWJVcXY2UENMZWZLY3djZ0lEUkwzeXlzdXRvcG5jMFVuQURMU1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzQ0ODY0NzQ3CWZpbGU6UGxhbmNrXzEuMC4yX2FybTY0X2VuLVVTLm1zaQpGQUJmbDZVTURRUlJvL2szc1FuZlFGMW1tVElpcVkvVUxYYU1aOTBOcDk0SThkUHlLbzFvZGU4SHplSVVycU5oeEwrTXNRamE4M2NqSnBoejN3Rm1CUT09Cg==",
+      "url": "https://github.com/stella-labs/planck-releases/releases/download/1.0.2/Planck_1.0.2_arm64_en-US.msi"
     }
   }
 }
